@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mario Drums — Links</title>
+<meta name="description" content="Mario Drums (@mariodrums03) — baterista. Site oficial e canal de performances no YouTube.">
+<meta property="og:title" content="Mario Drums — Links">
+<meta property="og:description" content="Baterista. Assista no YouTube e conheça o site oficial.">
+<meta property="og:image" content="assets/bio-mario.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/bio-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ LINK-IN-BIO · MARIO DRUMS (dark, estilo IG) ============ */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d0e11;--card:rgba(255,255,255,.035);--line:rgba(255,255,255,.09);--ink:#f4f5f7;--muted:#9aa0a8;--blue:#3d7ef8;--blue-ink:#fff}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100dvh}
+.wrap{max-width:428px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column;padding:0 18px calc(28px + env(safe-area-inset-bottom))}
+
+/* ---- HERO ---- */
+.hero{position:relative;height:min(56vh,460px);min-height:330px;margin:0 -18px;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 22%}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:46%;background:linear-gradient(to top,var(--bg) 2%,rgba(13,14,17,.55) 42%,transparent)}
+.badge{position:absolute;top:calc(16px + env(safe-area-inset-top));left:18px;z-index:3;width:52px;height:52px;background:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:9px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.badge img{width:100%;height:100%;object-fit:contain}
+.name{position:absolute;left:0;right:0;bottom:10px;z-index:2;text-align:center}
+.name h1{font-size:clamp(44px,14vw,58px);font-weight:800;letter-spacing:-.02em;line-height:.96;text-shadow:0 6px 40px rgba(0,0,0,.55)}
+.name .drums{display:block;font-family:Caveat,cursive;font-weight:700;color:var(--blue);font-size:clamp(30px,9.4vw,40px);line-height:.8;transform:rotate(-4deg);margin-top:-4px;text-shadow:0 4px 30px rgba(0,0,0,.55)}
+
+/* ---- INTRO ---- */
+.welcome{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px auto 0;width:max-content;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:999px;padding:10px 30px;font-size:17px;font-weight:600}
+.hint{margin:13px 0 12px;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.02em}
+.hint b{color:var(--ink)}
+
+/* ---- CARDS ---- */
+.cards{display:flex;flex-direction:column;gap:14px}
+.card{position:relative;display:flex;align-items:stretch;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.card:active{transform:scale(.98)}
+@media(hover:hover){.card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.2);box-shadow:0 18px 50px rgba(0,0,0,.5)}}
+.card-body{padding:16px 6px 16px 18px;flex:1;min-width:0;position:relative;z-index:2}
+.card-top{display:flex;align-items:center;gap:8px}
+.ico{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.ico-play{background:rgba(61,126,248,.14);border:1px solid rgba(61,126,248,.45)}
+.ico-note{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16)}
+.card-top .tag{font-size:10.5px;letter-spacing:.14em;font-weight:700;color:var(--muted);text-transform:uppercase}
+.card h3{margin-top:9px;font-size:19px;line-height:1.22;font-weight:800;letter-spacing:-.01em}
+.card h3 .azul{color:var(--blue)}
+.card .micro{margin-top:5px;font-size:12.5px;color:var(--muted);line-height:1.4}
+.cta{margin-top:12px;display:inline-flex;align-items:center;gap:7px;background:var(--blue);color:var(--blue-ink);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:9px;box-shadow:0 8px 24px rgba(61,126,248,.32)}
+.cta svg{flex:0 0 auto}
+.card-thumb{position:relative;width:42%;flex:0 0 auto;margin:7px;border-radius:14px;overflow:hidden;z-index:2}
+.card-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.card-site::before{content:"";position:absolute;inset:-30%;z-index:0;background:url('assets/bio-mario.webp') center 32%/cover no-repeat;filter:blur(16px) saturate(.85) brightness(.5)}
+.card-site .card-body>*{position:relative;z-index:2}
+.card-site .card-body{flex:1.15}
+.card-arrow{position:relative;z-index:2;flex:0 0 auto;display:flex;align-items:center;padding-right:16px;color:var(--muted)}
+/* ---- RODAPÉ ---- */
+.foot{margin-top:auto;padding-top:26px;text-align:center;color:#5a5f66;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.foot .word{color:var(--muted)}
+
+/* ---- ENTRADA ---- */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero{animation:rise .7s var(--e,cubic-bezier(.22,1,.36,1)) both}
+.welcome{animation:rise .6s .15s var(--e,cubic-bezier(.22,1,.36,1)) both}
+.hint{animation:rise .6s .25s var(--e,cubic-bezier(.22,1,.36,1)) both}
+.card:nth-child(1){animation:rise .6s .35s var(--e,cubic-bezier(.22,1,.36,1)) both}
+.card:nth-child(2){animation:rise .6s .45s var(--e,cubic-bezier(.22,1,.36,1)) both}
+.foot{animation:fade .6s .6s ease both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.hero,.welcome,.hint,.card,.foot{animation:none}}
+/* override genérico do hero name sobre gradiente */
+.hero .name{animation:none}
+@media(min-width:560px){.hero::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(120% 90% at 50% 0%,transparent 55%,rgba(13,14,17,.5))}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- HERO: foto + nome -->
+  <header class="hero">
+    <img src="assets/bio-mario.webp" alt="Mario Drums tocando bateria" width="1440" height="1800">
+    <div class="badge" aria-hidden="true"><img src="assets/bio-logo.png" alt=""></div>
+    <div class="name">
+      <h1>Mario</h1>
+      <span class="drums">Drums</span>
+    </div>
+  </header>
+
+  <!-- BEM-VINDO -->
+  <div class="welcome">Bem-vindo!</div>
+  <p class="hint">Links úteis <b>👇</b></p>
+
+  <!-- LINKS -->
+  <nav class="cards" aria-label="Links de Mario Drums">
+
+    <!-- YOUTUBE -->
+    <a class="card" href="https://youtu.be/v8NnovQgnTQ" target="_blank" rel="noopener">
+      <div class="card-body">
+        <div class="card-top">
+          <span class="ico ico-play" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2.5 1.5 10.5 6l-8 4.5v-9Z" fill="#3d7ef8"/></svg></span>
+          <span class="tag">Novo vídeo</span>
+        </div>
+        <h3>Inscreva-se<br>no <span class="azul">YouTube!</span></h3>
+        <span class="cta"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5.4" stroke="#fff" stroke-width="1"/><path d="M4.8 3.9 8 6 4.8 8.1V3.9Z" fill="#fff"/></svg>Assistir agora</span>
+      </div>
+      <div class="card-thumb"><img src="assets/bio-thumb.jpg" alt="Mario Drums tocando no estúdio"></div>
+    </a>
+
+    <!-- SITE OFICIAL -->
+    <a class="card card-site" href="https://mariodrums.vercel.app/mario-drums.html">
+      <div class="card-body">
+        <div class="card-top">
+          <span class="ico ico-note" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.2 9.6c0 .9-.9 1.6-2 1.6S.3 10.5.3 9.6c0-.9.9-1.6 2-1.6.4 0 .8.1 1.1.3V1.6l8-.9v7.6c0 .9-.9 1.6-2 1.6s-2-.7-2-1.6.9-1.6 2-1.6c.4 0 .8.1 1.1.3V2.9L5.4 3.7v5.9Z" fill="#fff"/></svg></span>
+          <span class="tag">Site oficial</span>
+        </div>
+        <h3><span>Mario</span> <span class="azul">Drums</span></h3>
+        <p class="micro">Grooves, takes e performances — tudo em um só lugar.</p>
+      </div>
+      <span class="card-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+
+  </nav>
+
+  <footer class="foot">© 2026 <span class="word">Mario Drums</span></footer>
+
+</main>
+</body>
+</html>

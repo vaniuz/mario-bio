@@ -10,7 +10,10 @@ Página de links (link-in-bio) do baterista **Mario Drums** (@mariodrums03) — 
 Site 100% estático (HTML + CSS, sem build). Qualquer host serve — na Vercel use o preset **Other**.
 
 Arquivos:
-- `bio.html` — a página
+- `index.html` — a página (é o que a Vercel serve na raiz `/`)
+- `bio.html` — atalho que redireciona para `/` (links antigos continuam funcionando)
 - `assets/bio-mario.webp` — foto hero (1440×1800)
 - `assets/bio-logo.png` — logo MD (badge branco)
 - `assets/bio-thumb.jpg` — thumbnail do card do YouTube
+
+> Importante: a página **precisa** se chamar `index.html`. Um `bio.html` sozinho na raiz faz a Vercel responder `404 NOT FOUND` em `/`.

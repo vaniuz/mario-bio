@@ -1,6 +1,6 @@
 # Mario Drums — Link-in-Bio
 
-Página de links (link-in-bio) do baterista **Mario Drums** (@mariodrums03) — tema escuro estilo Instagram, com cards para o canal do YouTube e o site oficial.
+Página de links (link-in-bio) do baterista **Mario Drums** (@mariodrums03) — tema escuro estilo Instagram, com cards para o canal do YouTube e o site oficial. Os textos da página estão em **inglês**.
 
 ## Links
 - **YouTube** → https://youtu.be/v8NnovQgnTQ
